@@ -1,5 +1,7 @@
 FROM seegno/bitcoind:0.12-alpine
 
+RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ gosu
+
 ADD /setuidgid.inc .
 ADD /entrypoint.sh .
 RUN chmod u+x /entrypoint.sh
