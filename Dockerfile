@@ -1,4 +1,4 @@
-FROM seegno/bitcoind:0.12-alpine
+FROM seegno/bitcoind:0.13-alpine
 
 RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ gosu
 
